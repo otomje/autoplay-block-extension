@@ -1,0 +1,34 @@
+:root {
+    --padding: 20px;
+    --border-radius: 16px;
+    --border-radius-max: 9999px;
+    --transition-duration: .12s;
+    --font-family-base: 'Inter';
+    --font-family-alt: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+[data-theme="light"] {
+    --color-background: rgb(245 245 245);
+    --color-background-secondary: rgb(255 255 255);
+    --color-border: rgb(205 205 205);
+    --color-text-title: rgb(20 20 20);
+    --color-text-subtitle: rgb(80 80 80);
+    --color-text-secondary: rgb(40 40 40);
+    --color-icon-fill: rgb(40 40 40);
+    --color-button-disabled: rgb(225 225 225);
+    --color-button-enabled: rgb(50 50 50);
+    --color-button-thumb: rgb(255 255 255);
+}
+
+[data-theme="dark"] {
+    --color-background: rgb(10 10 10);
+    --color-background-secondary: rgb(0 0 0);
+    --color-border: rgb(50 50 50);
+    --color-text-title: rgb(255 255 255);
+    --color-text-subtitle: rgb(175 175 175);
+    --color-text-secondary: rgb(215 215 215);
+    --color-icon-fill: rgb(215 215 215);
+    --color-button-disabled: rgb(30 30 30);
+    --color-button-enabled: rgb(205 205 205);
+    --color-button-thumb: rgb(0 0 0);
+}

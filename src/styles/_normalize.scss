@@ -1,0 +1,102 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scrollbar-gutter: stable; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+blockquote,
+figure,
+fieldset {
+    margin: 0;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: currentColor;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-block: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl {
+    margin-block: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-flex;
+}
+
+dd {
+    margin-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img {
+    font-size: 14px;
+}
+
+svg * {
+    transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

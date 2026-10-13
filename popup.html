@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Block</title>
+    <meta name="description" content="Block autoplay of videos on all websites.">
+    <script type="module" src="./src/scripts/theme-toggle.js" defer></script>
+    <script type="module" src="./src/scripts/autoplay-toggle.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+
+    <section class="extension">
+        <div class="extension__body">
+            <div class="extension__info">
+                <h1 class="extension__title">Autoplay Block</h1>
+                <p class="extension__subtitle">Globally blocks automatic video playback on all websites.</p>
+            </div>
+            <button type="button" class="toggle-button" data-autoplay-state aria-label="Video autoplay toggle">
+                <span class="toggle-button__thumb"></span>
+            </button>
+        </div>
+        <span class="extension__line line"></span>
+        <ul class="extension__list">
+            <li class="extension__item extension-item">
+                <div class="extension-item__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="extension-item__icon" width="16" height="16">
+                        <path d="M8 14C6.33333 14 4.91667 13.4167 3.75 12.25C2.58333 11.0833 2 9.66667 2 8C2 6.33333 2.58333 4.91667 3.75 3.75C4.91667 2.58333 6.33333 2 8 2C8.15556 2 8.30833 2.00556 8.45833 2.01667C8.61949 2.0286 8.67328 2.23642 8.55438 2.34586C8.25648 2.62004 8.0078 2.94642 7.80833 3.325C7.53611 3.84167 7.4 4.4 7.4 5C7.4 6 7.75 6.85 8.45 7.55C9.15 8.25 10 8.6 11 8.6C11.6111 8.6 12.1722 8.46389 12.6833 8.19167C13.0577 7.99226 13.3814 7.74368 13.6545 7.44591C13.7637 7.3268 13.9714 7.38051 13.9833 7.54167C13.9944 7.69167 14 7.84444 14 8C14 9.66667 13.4167 11.0833 12.25 12.25C11.0833 13.4167 9.66667 14 8 14Z" />
+                    </svg>
+                    <span class="extension-item__name">Dark theme</span>
+                </div>
+                <button type="button" class="toggle-button toggle-button--small" data-theme-state aria-label="Dark theme toggle">
+                    <span class="toggle-button__thumb"></span>
+                </button>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

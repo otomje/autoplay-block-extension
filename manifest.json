@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Autoplay Block",
+    "version": "1.4.0",
+    "description": "Block autoplay of videos on all websites.",
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": {
+            "16": "./src/images/logos/logo-light_16.png",
+            "32": "./src/images/logos/logo-light_32.png",
+            "48": "./src/images/logos/logo-light_48.png",
+            "64": "./src/images/logos/logo-light_64.png",
+            "128": "./src/images/logos/logo-light_128.png"
+        }
+    },
+    "icons": {
+        "16": "./src/images/logos/logo-light_16.png",
+        "32": "./src/images/logos/logo-light_32.png",
+        "48": "./src/images/logos/logo-light_48.png",
+        "64": "./src/images/logos/logo-light_64.png",
+        "128": "./src/images/logos/logo-light_128.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./src/scripts/autoplay-blocker.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+.extension-item {
+    column-gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+        column-gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        fill: var(--color-icon-fill);
+    }
+
+    &__name {
+        font-size: 12px;
+        font-weight: 400;
+        overflow: hidden;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        color: var(--color-text-secondary);
+    }
+}

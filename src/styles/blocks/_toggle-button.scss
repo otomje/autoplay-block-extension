@@ -1,0 +1,52 @@
+.toggle-button {
+    --toggleButtonWidth: 64px;
+    --toggleButtonThumbWidth: 22px;
+    --toggleButtonPadding: 5px;
+
+    width: var(--toggleButtonWidth);
+    height: calc(var(--toggleButtonWidth) / 2);
+    padding-inline: var(--toggleButtonPadding);
+    border: none;
+    border-radius: var(--border-radius-max);
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--color-button-disabled);
+    transition: background-color var(--transition-duration) linear;
+
+    &:focus-visible {
+        outline-offset: 2px;
+    }
+
+    &--small {
+        --toggleButtonWidth: 40px;
+        --toggleButtonThumbWidth: 10px;
+    }
+
+    // &--active,
+    &[data-theme-state="dark"],
+    &[data-autoplay-state="enabled"] {
+        --toggleButtonThumbMargin: calc(var(--toggleButtonWidth) - var(--toggleButtonThumbWidth) - var(--toggleButtonPadding) * 2);
+
+        background-color: var(--color-button-enabled);
+    }
+
+    &__thumb {
+        width: var(--toggleButtonThumbWidth);
+        height: var(--toggleButtonThumbWidth);
+        margin-left: var(--toggleButtonThumbMargin);
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: var(--color-button-thumb);
+        transition:
+            background-color var(--transition-duration) linear,
+            margin var(--transition-duration) linear,
+            scale var(--transition-duration) linear;
+    }
+
+    &:active &__thumb {
+        scale: .9;
+    }
+}
